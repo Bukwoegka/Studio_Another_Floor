@@ -1,0 +1,295 @@
+/*Основные элементы*/
+
+body {
+    background: url(../img/bg.png);
+    background-size: 10px;
+}
+.wrap {
+     justify-content: center;
+}
+/*Основные элементы*/
+
+/*Хэдер, навигация*/
+.header {
+    background: rgba(25, 25, 25, 1);
+    background-image: url(../img/b.svg);
+    background-size: 5px;
+    border-bottom: 10px solid #fca946;
+    box-sizing: border-box;
+}
+.header .header-wrap {
+    margin: 0 auto;
+}
+.header__logo {
+    justify-content: center;
+    align-items: center;
+}
+.header__logo a:hover {
+    box-shadow: 0px 0px 5px white;
+}
+nav a {
+    padding-right: 30px;
+    line-height: 100px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+.nav {
+    justify-content: flex-end;
+} 
+/*Хэдер, навигация*/
+
+/*Слайдер*/
+.sl-body {
+    position: relative;
+}
+.main_button {
+   background-color: #c80928;
+   line-height: 60px;
+   width: 15%;
+   border-radius: 5px;
+   border: none;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(0, 0, 0, 1);
+   font-size: 1.2em;
+   cursor: pointer;
+   z-index: 1000;
+   outline: none;
+}
+.main_button:hover {
+    background-color: #9b0319;
+}
+.sl-body .button_block {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 17%;
+}
+/*Слайдер*/
+
+/*Аппаратура*/
+.main {
+    max-width: 1440px;
+    min-height: 400px;
+    margin: 0 auto 50px;
+    text-align: right;
+}
+.main__item {
+    min-height: 320px;
+    width: 33%;
+    background-color: #e6e6e6;
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.main__item:hover {
+    background-color: #fca946;
+}
+.main__f {
+    background-image: url(../img/Micro.png);
+     -webkit-transition: 0.5s ease-in-out;
+     -moz-transition: 0.5s ease-in-out;
+     -o-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;
+}
+.main__f:hover {
+    background-image: url(../img/Micro1.png);
+}
+.main__s {
+    background-image: url(../img/phones.png);
+     -webkit-transition: 0.5s ease-in-out;
+     -moz-transition: 0.5s ease-in-out;
+     -o-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;
+}
+.main__s:hover {
+    background-image: url(../img/phones1.png);
+}
+.main__t {
+    background-image: url(../img/preamp.png);
+     -webkit-transition: 0.5s ease-in-out;
+     -moz-transition: 0.5s ease-in-out;
+     -o-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;
+}
+.main__t:hover {
+    background-image: url(../img/preamp1.png);
+}
+.main__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+}
+.main__title {
+    width: 30%;
+    height: 75px;
+    background-color: #fca946;
+    color: white;
+    display: inline-block;
+    margin: -50px 250px 0 0;
+}
+.main__title span {
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+/*Аппаратура*/
+
+
+/*Кольца декор*/
+.circle_wrap {
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+.circle_wrap__item {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border: #bebebe solid 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.circle_wrap__item1 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border: #000000 solid 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.circle_wrap__item2 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border: #F0AF00 solid 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+/*Кольца декор*/
+
+/* Цены */
+ .block-price {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+    background: url(../img/bg.png);
+    background-size: 10px;
+    background-color: #bababa;
+    border-top: 40px double white;
+    border-bottom: 40px double white;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.block-price .coins_block {
+    margin-left: 0;
+    margin-right: 0;
+}
+.block-price h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.block-price h1:after {
+    content: " ";
+    background-color: #fff;
+    width: 20%;
+    height: 10px;
+    display: block;
+    text-align: center;
+    margin: 20px auto; 
+}
+.block-price__text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    max-height: 300px;
+}
+.coins_block__img {
+    height: 200px;
+    width: 200px;
+    border: 10px solid white;   
+    background-color: #fca946;
+    background-image: url(../img/Coins.png);
+    border-radius: 50%;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Слайдер отзывы*/
+.translators {
+    width: 1140px;
+    margin: 0 auto;
+}
+.translators h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #b0b0b0;
+    font-size: 3em;
+    margin-left: 15px;
+}
+.translators__item {
+    min-height: 455px;
+    background-color: white;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    border: 5px solid #bebebe;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.line_decor {
+    background-color: #fca946;
+    height: 100px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    bottom: 50%; 
+}
+.translators .owl-carousel .translators__item img {
+    width: 70%;
+    margin: 30px auto 0;
+}
+.line_in {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #bebebe;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.text_in {
+    padding: 25px 25px 25px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.tr_wrap {
+    position: relative;
+    margin-bottom: 50px;
+}
+.owl-theme .owl-nav {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+}
+.owl-prev {
+    position: absolute;
+    left: 0;
+}
+.owl-next {
+    position: absolute;
+    right: 0;
+}
