@@ -27,12 +27,15 @@ body {
 .header__logo a:hover {
     box-shadow: 0px 0px 5px white;
 }
-nav a {
+.nav a {
     padding-right: 30px;
     line-height: 100px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
+}
+.nav a:hover {
+    color: #fca946;
 }
 .nav {
     justify-content: flex-end;
@@ -43,7 +46,7 @@ nav a {
 .sl-body {
     position: relative;
 }
-.main_button {
+#main_button {
    background-color: #c80928;
    line-height: 60px;
    width: 15%;
@@ -51,11 +54,17 @@ nav a {
    border: none;
    font-family: 'Roboto', sans-serif;
    color: white;
-   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(0, 0, 0, 1);
    font-size: 1.2em;
    cursor: pointer;
    z-index: 1000;
    outline: none;
+}
+#main_button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 .main_button:hover {
     background-color: #9b0319;
@@ -75,6 +84,7 @@ nav a {
     margin: 0 auto 50px;
     text-align: right;
 }
+id
 .main__item {
     min-height: 320px;
     width: 33%;
@@ -191,6 +201,7 @@ nav a {
     text-align: center;
     padding: 30px 0;
     box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .block-price .coins_block {
     margin-left: 0;
@@ -292,4 +303,203 @@ nav a {
 .owl-next {
     position: absolute;
     right: 0;
+}
+/* Карта*/
+.map_wrapper {
+    width: 100%;
+    height: 600px;
+    background-color: #b5b5b5;
+    position: relative;
+    border-top: 40px double white;
+    border-bottom: 40px double white;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.map_ya {
+    padding: 0 0 20% 0;
+}
+.map_wrapper h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin: 15px;
+}
+.adress__plank {
+    height: 12%;
+    width: 25%;
+    background-color: #000000;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    background-color: #fca946;
+    border: 5px solid #b5b5b5;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+}
+.adress__plank span {
+    color: black;
+}
+/*Форма*/
+#form_wrap {
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.high_block {
+    background-color: #fca946;
+    background-image: url(../img/sprite.png);
+    height: 400px;
+    text-align: center;
+}
+.low_block {
+    background-color: #b5b5b5;
+    background-image: url(../img/sprite.png);
+    height: 100px;
+}
+.high_block__title {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-top: 70px;
+    font-size: 3em; 
+    margin-bottom: 60px;
+}
+.high_block .name {
+    height: 40px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #b5b5b5;
+    color: white;
+    margin-left: 16px;
+    outline: none;
+    border: 1px solid black;
+}
+.high_block .tel {
+    height: 40px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #b5b5b5;
+    color: white;
+    outline: none;
+    border: 1px solid black;
+}
+.high_block p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    color: white;
+}
+.btn {
+   background-color: #c80928;
+   line-height: 60px;
+   width: 15%;
+   border-radius: 5px;
+   border: none;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   font-size: 1.2em;
+   cursor: pointer;
+   outline: none;
+   margin: 3% 0 0 28%;
+   box-shadow: 0 0 5px black;
+}
+.btn:hover {
+    background-color: #9b0319;
+    box-shadow: none;
+}
+.name::-webkit-input-placeholder { /* WebKit browsers */
+   color: #e9e9e9;
+   padding-left: 10px;
+}
+.tel::-webkit-input-placeholder { /* WebKit browsers */
+   color: #e9e9e9;
+   padding-left: 10px;
+}
+/*ФУТЕР*/
+.footer {
+    height: 380px;
+    background-color: #7c7c7c;
+    border-top: 5px solid #fca946;
+    
+}
+.footer_wrap {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-around;
+}
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+} 
+.footer_menu a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+.footer_menu a:hover {
+    color: #1c1c1c;
+}
+.footer_ico>* {
+    width: 50px;
+    height: 50px;
+}
+.footer_adr {
+    display: flex;
+    margin-top: 3%;
+    margin-left: -7%;
+}
+.adr__block {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 20px;
+}
+.ico1 {
+    background-image: url(../img/sprite1.png);
+    background-position: -8px -5px;
+}
+.ico1:hover {
+    background-image: url(../img/sprite1.png);
+    background-position: -69px -5px;
+}
+.ico2 {
+    background-image: url(../img/sprite1.png);
+    background-position: -2px -58px;
+}
+.ico2:hover {
+    background-image: url(../img/sprite1.png);
+    background-position: -65px -58px;
+}
+.ico3 {
+    background-image: url(../img/sprite1.png);
+    background-position: -6px -114px;
+}
+.ico3:hover {
+    background-image: url(../img/sprite1.png);
+    background-position: -65px -114px;
+}
+.ico4 {
+    background-image: url(../img/sprite1.png);
+    background-position: -5px -165px;
+}
+.ico4:hover {
+    background-image: url(../img/sprite1.png);
+    background-position: -65px -165px;
+}
+.ico5 {
+    background-image: url(../img/sprite1.png);
+    background-position: -10px -218px;
+}
+.ico5:hover {
+    background-image: url(../img/sprite1.png);
+    background-position: -71px -218px;
 }

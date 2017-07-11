@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/fotorama.css">
     <link rel="stylesheet" href="css/Normalize.css">
     <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="dist/owl.carousel.js"></script>
     <script src="js/fotorama.js"></script>
-    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="dist/assets/owl.theme.default.css">
+    <script src="js/js.js"></script>
     <title>Страница</title>
 </head>
 <!--   Header -->
@@ -44,7 +45,7 @@
                 <img src="img/slide3.png">
             </div>
             <div class="button_block row center-xs">
-                <button class="main_button">ЗАБРОНИРОВАТЬ</button>  
+                <button id="main_button"><a href="#form_wrap">ЗАБРОНИРОВАТЬ</a></button>  
             </div>
     </div>
 <!-- Equipment -->
@@ -143,6 +144,78 @@
             <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
     </div>
 <!-- Map -->
+    <div class="map_wrapper">
+    <h1>КАК НАС НАЙТИ?</h1>
+        <div class="map_ya"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad432cfd288c70a782b212a5a18624905ed1d01060d6b03fd1022e81aab3ae869&amp;width=100%25&amp;height=440&amp;lang=ru_RU&amp;scroll=false"></script></div>
+        <div class="adress__plank">
+        <span>Адрес:</span> Москва, ул.Молостовых д.21/34 кв.31 <br><br>
+        <span>Тел:</span> <a href="tel:+7(967)1760404">+7(967)176-04-04    </a></div>
+    </div>
+
+    <!-- Circle -->
+    <div class="circle_wrap row center-xs">
+            <div class="col-xs-1"><div class="circle_wrap__item"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item1"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
+    </div>
+    <!-- Form -->
+    <div id="form_wrap">
+        <div class="high_block">
+            <h1 class="high_block__title">ОСТАВЬ КОНТАКТЫ, МЫ ПЕРЕЗВОНИМ!</h1>
+            <form name="test" method="post" action="#">
+                <p style="color: black"><b>ВАШЕ ИМЯ:</b>
+                <input type="text" placeholder="Укажите ваше имя" class="name">
+                </p>
+                <p style="color:black"><b>ВАШ НОМЕР:</b>
+                <input type="tel" name="tel" class="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="Телефон в формате +7 *** *** ** **" size="40">
+                </p>
+                <p ><input type="submit" class="btn" type="submit" value="Перезвоните мне!">
+            </form>
+
+        </div>
+        <div class="low_block">
+        </div>
+    </div>
+
+    <!-- Circle -->
+    <div class="circle_wrap row center-xs">
+            <div class="col-xs-1"><div class="circle_wrap__item"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item1"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
+    </div>
+    <!-- Footer -->
+    
+        <footer class="footer">
+            <div class="footer_wrap">
+                <div class="footer__info">
+                    <div class="footer_menu">
+                        <a href="#">АППАРАТУРА </a>
+                        <a href="#">ОТЗЫВЫ </a>
+                        <a href="#">ПРАЙС </a>
+                        <a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+                    </div>
+                    <div class="footer_adr">
+                        <img src="img/micro_min.png" height="30%" alt="">
+                        <div class="adr__block">
+                            <div class="adr">Адрес студии:
+                            Москва, ул Молостовых, д.21/34 кв.91</div>
+                            <div class="foottel">Контактный телефон:
+                            +7 (967) 176 04 04</div>
+                            <div class="graf">График работы:
+                            Понедельник - пятница с 9:00 до 17:00</div>
+                        </div>
+                    </div>
+                    <div class="footer_ico">
+                        <div class="ico1"><a href="#"></a></div>
+                        <div class="ico2"><a href="#"></a></div>
+                        <div class="ico3"><a href="#"></a></div>
+                        <div class="ico4"><a href="#"></a></div>
+                        <div class="ico5"><a href="#"></a></div>
+
+                    </div>
+                </div>
+        </footer>
+    
     <!-- scripts -->
     <script>
     $('.owl-carousel').owlCarousel({
