@@ -18,27 +18,28 @@
     <script src="js/js.js"></script>
     <title>Страница</title>
 </head>
+
 <!--   Header -->
 <body>
-    <div class="wrap">
-        <header class="header">
-            <div class="row header-wrap">
-                <div class="col-xs-5"></div>
-                <div class="col-xs-2 header__logo row">
-                    <a href="#"><img src="img/Logo1.png" alt="ЛОГОТИП"></a>
-                </div>
-                <div class="col-xs-4 navbar">
-                    <nav class="nav row">
-                        <a href="#">ПРАЙС</a>
-                        <a href="#">ОБОРУДОВАНИЕ</a>
-                        <a href="#">КОНТАКТЫ</a>
-                    </nav>
+    <header class="header">
+        <div class="row header-wrap">
+            <div class="col-xs-2 col-xs-offset-5 end-xs middle-xs row">
+                <div class="header__logo">
+                <a href="#"><object id="graph" name="graph" type="image/svg+xml" data="img/logo.svg" width="auto" height="auto"></object></a>
                 </div>
             </div>
-        </header>
-    </div>
+            <div class="col-xs-3">
+                <nav class="row middle-xs end-xs navbar">
+                    <a class="header__link" href="#">ПРАЙС</a>
+                    <a class="header__link" href="#">ОБОРУДОВАНИЕ</a>
+                    <a class="header__link" href="#">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
 <!-- Slider -->
-    <div class="sl-body">
+    <div class="slider-body">
             <div class="fotorama" data-width="100%" data-ratio="1928/368" data-max-width="100%" data-loop="true" data-autoplay="true" >
                 <img src="img/slide1.png">
                 <img src="img/slide2.png">
@@ -48,45 +49,52 @@
                 <button id="main_button"><a href="#form_wrap">ЗАБРОНИРОВАТЬ</a></button>  
             </div>
     </div>
+
 <!-- Equipment -->
-    <div class="main">
+    <div class="Equip">
         <div class="row">
-            <div class="col-xs-4 main__item main__f"></div>
-            <div class="col-xs-4 main__item"><div class="main__text"><h1>МОНИТОРНЫЕ КОЛОНКИ</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis</p></div></div>
-            <div class="col-xs-4 main__item main__s"></div>
+            <div class="col-xs-4 Equip__item Equip__f"></div>
+            <div class="col-xs-4 Equip__item"><div class="Equip__text"><h1>МОНИТОРНЫЕ КОЛОНКИ</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis</p></div></div>
+            <div class="col-xs-4 Equip__item Equip__s"></div>
         </div>
         <div class="row">
-            <div class="col-xs-4 main__item"><div class="main__text"><h1>КОНДЕНСАТОРНЫЙ МИКРОФОН</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis</p></div></div>
-            <div class="col-xs-4 main__item main__t"></div>
-            <div class="col-xs-4 main__item"><div class="main__text"><h1>ЗВУКОВАЯ КАРТА</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis</p></div></div>
+            <div class="col-xs-4 Equip__item"><div class="Equip__text"><h1>КОНДЕНСАТОРНЫЙ МИКРОФОН</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis</p></div></div>
+            <div class="col-xs-4 Equip__item Equip__t"></div>
+            <div class="col-xs-4 Equip__item"><div class="Equip__text"><h1>ЗВУКОВАЯ КАРТА</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis</p></div></div>
         </div>
-        <div class="main__title"><span>АППАРАТУРА</span></div>
+        <div class="Equip__title"><span>АППАРАТУРА</span></div>
     </div>
-    <!-- Circle -->
+
+<!-- Circle -->
     <div class="circle_wrap row center-xs">
-            <div class="col-xs-1"><div class="circle_wrap__item"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item1"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_gray"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_black"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_orange"></div></div>
     </div>
+
     <!-- Наши цены -->
     <div class="block-price">
         <h1>НАШИ НИЗКИЕ ЦЕНЫ</h1>
         <div class="coins_block row center-xs">
-            <div class=" col-xs-2"> <div class="coins_block__img"></div></div>
-            <div class="block-price__text col-xs-4">
-            <p>Запись - 1000руб/час</p> 
-            <p>Сведение трека - 500руб/минута</p>
-            <p>Мастеринг трека- 500 руб/трек</p>
+            <div class=" col-xs-2"> <object id="graph" name="graph" type="image/svg+xml" data="img/coin.svg" width="100%" height="auto"></object> </div>
+            <div class="col-xs-4">
+                <div class="row">
+                    <p class="col-xs-12 block-price__text">Запись - 1000руб/час</p> 
+                    <p class="col-xs-12 block-price__text">Сведение трека - 500руб/минута</p>
+                    <p class="col-xs-12 block-price__text">Мастеринг трека- 500 руб/трек</p>
+                </div>
             </div>
         </div>
     </div>
 
+<!-- Circle -->
     <div class="circle_wrap row center-xs">
-            <div class="col-xs-1"><div class="circle_wrap__item"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item1"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_gray"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_black"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_orange"></div></div>
     </div>
-    <!-- Отзывы -->
+
+<!-- Отзывы -->
     <div class="tr_wrap">
     <div class="translators">
         <h1>ОТЗЫВЫ БЛАГОДАРНЫХ КЛИЕНТОВ:</h1>
@@ -137,11 +145,12 @@
     </div>
     <div class="line_decor"></div>
     </div>
+
 <!-- Circle -->
     <div class="circle_wrap row center-xs">
-            <div class="col-xs-1"><div class="circle_wrap__item"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item1"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_gray"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_black"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_orange"></div></div>
     </div>
 <!-- Map -->
     <div class="map_wrapper">
@@ -152,11 +161,11 @@
         <span>Тел:</span> <a href="tel:+7(967)1760404">+7(967)176-04-04    </a></div>
     </div>
 
-    <!-- Circle -->
+<!-- Circle -->
     <div class="circle_wrap row center-xs">
-            <div class="col-xs-1"><div class="circle_wrap__item"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item1"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_gray"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_black"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_orange"></div></div>
     </div>
     <!-- Form -->
     <div id="form_wrap">
@@ -177,11 +186,11 @@
         </div>
     </div>
 
-    <!-- Circle -->
+<!-- Circle -->
     <div class="circle_wrap row center-xs">
-            <div class="col-xs-1"><div class="circle_wrap__item"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item1"></div></div>
-            <div class="col-xs-1"><div class="circle_wrap__item2"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_gray"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_black"></div></div>
+            <div class="col-xs-1"><div class="circle_wrap__item circle_wrap__item_orange"></div></div>
     </div>
     <!-- Footer -->
     

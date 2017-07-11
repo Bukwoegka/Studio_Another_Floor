@@ -4,10 +4,6 @@ body {
     background: url(../img/bg.png);
     background-size: 10px;
 }
-.wrap {
-     justify-content: center;
-}
-/*Основные элементы*/
 
 /*Хэдер, навигация*/
 .header {
@@ -20,41 +16,35 @@ body {
 .header .header-wrap {
     margin: 0 auto;
 }
-.header__logo {
-    justify-content: center;
-    align-items: center;
-}
-.header__logo a:hover {
-    box-shadow: 0px 0px 5px white;
-}
-.nav a {
+.header__link {
     padding-right: 30px;
-    line-height: 100px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
 }
-.nav a:hover {
+.navbar {
+    height: 100%;
+}
+.header .header__link:hover {
     color: #fca946;
 }
-.nav {
-    justify-content: flex-end;
-} 
-/*Хэдер, навигация*/
+.header__logo {
+    margin: 20px auto;
+}
 
 /*Слайдер*/
-.sl-body {
+.slider-body {
     position: relative;
 }
 #main_button {
    background-color: #c80928;
-   line-height: 60px;
+   line-height: 100%;
    width: 15%;
    border-radius: 5px;
    border: none;
    font-family: 'Roboto', sans-serif;
    color: white;
-   font-size: 1.2em;
+   font-size: 1em;
    cursor: pointer;
    z-index: 1000;
    outline: none;
@@ -66,27 +56,26 @@ body {
     height: 100%;
     width: 100%;
 }
-.main_button:hover {
+#main_button:hover {
     background-color: #9b0319;
 }
-.sl-body .button_block {
+.slider-body .button_block {
     margin: 0;
     width: 100%;
+    height: 15%;
     position: absolute;
     bottom: 17%;
 }
 /*Слайдер*/
 
 /*Аппаратура*/
-.main {
-    max-width: 1440px;
-    min-height: 400px;
+.Equip {
+    max-width: 72.72%;
     margin: 0 auto 50px;
     text-align: right;
 }
-id
-.main__item {
-    min-height: 320px;
+.Equip__item {
+    min-height: 30%;
     width: 33%;
     background-color: #e6e6e6;
     background-size: cover;
@@ -95,46 +84,46 @@ id
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
-.main__item:hover {
+.Equip__item:hover {
     background-color: #fca946;
 }
-.main__f {
+.Equip__f {
     background-image: url(../img/Micro.png);
      -webkit-transition: 0.5s ease-in-out;
      -moz-transition: 0.5s ease-in-out;
      -o-transition: 0.5s ease-in-out;
      transition: 0.5s ease-in-out;
 }
-.main__f:hover {
+.Equip__f:hover {
     background-image: url(../img/Micro1.png);
 }
-.main__s {
+.Equip__s {
     background-image: url(../img/phones.png);
      -webkit-transition: 0.5s ease-in-out;
      -moz-transition: 0.5s ease-in-out;
      -o-transition: 0.5s ease-in-out;
      transition: 0.5s ease-in-out;
 }
-.main__s:hover {
+.Equip__s:hover {
     background-image: url(../img/phones1.png);
 }
-.main__t {
+.Equip__t {
     background-image: url(../img/preamp.png);
      -webkit-transition: 0.5s ease-in-out;
      -moz-transition: 0.5s ease-in-out;
      -o-transition: 0.5s ease-in-out;
      transition: 0.5s ease-in-out;
 }
-.main__t:hover {
+.Equip__t:hover {
     background-image: url(../img/preamp1.png);
 }
-.main__text {
+.Equip__text {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     padding: 20px 30px 20px 30px;
     text-align: left;
 }
-.main__title {
+.Equip__title {
     width: 30%;
     height: 75px;
     background-color: #fca946;
@@ -142,70 +131,55 @@ id
     display: inline-block;
     margin: -50px 250px 0 0;
 }
-.main__title span {
+.Equip__title span {
     display: block;
     line-height: 75px;
     text-align: center;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 }
-/*Аппаратура*/
-
 
 /*Кольца декор*/
 .circle_wrap {
     width: 100%;
     margin-bottom: 50px;
-
 }
 .circle_wrap__item {
     display: block;
     height: 25px;
     width: 25px;
-    border: #bebebe solid 10px;
+    border: #bebebe solid 5px;
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
 }
-.circle_wrap__item1 {
-    display: block;
-    height: 25px;
-    width: 25px;
-    border: #000000 solid 10px;
-    border-radius: 50%;
-    margin: 0 auto;
-    position: relative;
+.circle_wrap__item_gray {
+    border: #bebebe solid 5px;
 }
-.circle_wrap__item2 {
-    display: block;
-    height: 25px;
-    width: 25px;
-    border: #F0AF00 solid 10px;
-    border-radius: 50%;
-    margin: 0 auto;
-    position: relative;
+.circle_wrap__item_black {
+    border: #000000 solid 5px;
 }
-/*Кольца декор*/
+.circle_wrap__item_orange {
+    border: #F0AF00 solid 5px;
+ }
 
 /* Цены */
  .block-price {
     width: 100%;
-    height: 600px;
     margin-bottom: 50px;
     background: url(../img/bg.png);
     background-size: 10px;
     background-color: #bababa;
     border-top: 40px double white;
     border-bottom: 40px double white;
-    display: inline-block;
     text-align: center;
-    padding: 30px 0;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .block-price .coins_block {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 50px;
 }
 .block-price h1 {
     font-family: 'Roboto', sans-serif;
@@ -226,21 +200,10 @@ id
 .block-price__text {
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 1.4em;
     text-align: left;
-    max-height: 300px;
 }
-.coins_block__img {
-    height: 200px;
-    width: 200px;
-    border: 10px solid white;   
-    background-color: #fca946;
-    background-image: url(../img/Coins.png);
-    border-radius: 50%;
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 /* Слайдер отзывы*/
 .translators {
     width: 1140px;
