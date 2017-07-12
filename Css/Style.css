@@ -75,48 +75,19 @@ body {
     text-align: right;
 }
 .Equip__item {
-    min-height: 30%;
-    width: 33%;
     background-color: #e6e6e6;
     background-size: cover;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
 }
 .Equip__item:hover {
     background-color: #fca946;
 }
-.Equip__f {
-    background-image: url(../img/Micro.png);
-     -webkit-transition: 0.5s ease-in-out;
-     -moz-transition: 0.5s ease-in-out;
-     -o-transition: 0.5s ease-in-out;
-     transition: 0.5s ease-in-out;
-}
-.Equip__f:hover {
-    background-image: url(../img/Micro1.png);
-}
-.Equip__s {
-    background-image: url(../img/phones.png);
-     -webkit-transition: 0.5s ease-in-out;
-     -moz-transition: 0.5s ease-in-out;
-     -o-transition: 0.5s ease-in-out;
-     transition: 0.5s ease-in-out;
-}
-.Equip__s:hover {
-    background-image: url(../img/phones1.png);
-}
-.Equip__t {
-    background-image: url(../img/preamp.png);
-     -webkit-transition: 0.5s ease-in-out;
-     -moz-transition: 0.5s ease-in-out;
-     -o-transition: 0.5s ease-in-out;
-     transition: 0.5s ease-in-out;
-}
-.Equip__t:hover {
-    background-image: url(../img/preamp1.png);
-}
+
 .Equip__text {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -125,7 +96,6 @@ body {
 }
 .Equip__title {
     width: 30%;
-    height: 75px;
     background-color: #fca946;
     color: white;
     display: inline-block;
@@ -133,9 +103,8 @@ body {
 }
 .Equip__title span {
     display: block;
-    line-height: 75px;
     text-align: center;
-    font-size: 45px;
+    font-size: 2em;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -179,12 +148,11 @@ body {
 .block-price .coins_block {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 50px;
 }
 .block-price h1 {
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 2em;
     margin-bottom: 30px;
     position: relative;
 }
@@ -206,7 +174,7 @@ body {
 
 /* Слайдер отзывы*/
 .translators {
-    width: 1140px;
+    width: 70%;
     margin: 0 auto;
 }
 .translators h1 {

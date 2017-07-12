@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$('index.html').ready(function(){
 	$("#main_button").on("click","a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
@@ -11,5 +11,25 @@ $(document).ready(function(){
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 2000);
+	});
+});
+
+$('index.html').ready(function(){
+	$('.owl-carousel').owlCarousel({
+	    center: true,
+	    dots:true,
+	    
+    responsive:{
+        0:{
+            items:1,
+            nav:true,
+            loop:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
 	});
 });
