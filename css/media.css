@@ -1,21 +1,45 @@
 @media (max-width: 600px) {
-    body {font-size: 60%;}
-    .block-price__img1 {display: inline-block;}
-    .Equip__title {width: 70%;}
-    #main_button {width: 60%;}
-    .btn {width: 60%;}
+    body {font-size: 50%;}
+    .Equip__title {width: 100%; margin: 0; position: inherit; right: 0; bottom: 0}
+    #main_button {width: 100%; border-radius: 0; height: 50px;}
+    .slider-body .button_block {position: relative;}
+    .fotorama {display: none;}
+    .btn {width: 100%; border-radius: 0; margin: 0;}
+    .header__link {display: none;}
+    .Equip {max-width: 100%; margin-bottom: 20PX;}
+    .circle_wrap__item {height: 15px; width: 15px;}
+    .circle_wrap {margin-bottom: 20px;}
+    .block-price h1:after {width: 60%;}
+    .block-price {margin-bottom: 20px;}
+    .block-price__text {font-size: 1.2em;}
+    .translators h1 {font-size: 1.6em;}
+    .tr_wrap {margin-bottom: 20px;}
+    .map_wrapper h1 {font-size: 1.6em;}
+    .map_wrapper {margin-bottom: 30px;}
+    .adress__plank {position: relative; width: 100%; bottom: 0; left: 0; border: none; box-sizing: border-box; border-radius: 0; height: auto; margin-top: -40px;}
+    .high_block__title {font-size: 1.6em; margin-bottom: 30px; }
+    .high_block .name {width: 300px; margin-left: 0; font-size: 0.8em;}
+    .high_block .tel {width: 300px; font-size: 0.8em; margin-bottom: 30px;}
+    #form_wrap {margin-bottom: 20px;}
+    .footer {height: auto;}
+    .footer_menu {display: none;}
+    .footer__info {display: block;}
+    .footer_adr { margin: 0; }
+    .footer_ico {text-align: center;}
+    .footer_ico div {display: inline-block; margin-top: 30px;}
+    .adr__block div {font-size: 0.8em;}
     }
 @media (min-width: 601px) and (max-width: 1024px) {
     body {font-size: 80%;}
-    .block-price__img1 {display: inline-block;}
     .Equip__title {width: 50%;}
-    #main_button {width: 40%;}
+    #main_button {width: 30%;}
     .btn {width: 40%; }
+    .header__link {display: none;}
 }
 @media (max-width: 1025px) {
     body {font-size: 100%;}
     .block-price__img {display: none;}
 }
 @media (min-width: 1025px) {
-    .block-price__img1 {display: none;}
+
 }
