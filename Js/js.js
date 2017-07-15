@@ -16,16 +16,19 @@ $('index.html').ready(function(){
 
 $('index.html').ready(function(){
 	$('.owl-carousel').owlCarousel({
-	    center: true,
 	    dots:true,
-	    
     responsive:{
         0:{
             items:1,
             nav:true,
             loop:true
         },
-        1000:{
+        600:{
+            items:2,
+            nav:true,
+            loop:true
+        },
+        1120:{
             items:3,
             nav:true,
             loop:true

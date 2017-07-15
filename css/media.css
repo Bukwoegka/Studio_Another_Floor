@@ -15,7 +15,8 @@
     .translators h1 {font-size: 1.6em;}
     .tr_wrap {margin-bottom: 20px;}
     .map_wrapper h1 {font-size: 1.6em;}
-    .map_wrapper {margin-bottom: 30px;}
+    .map_wrapper {margin-bottom: 30px; height: auto;}
+    .map_ya {height: 300px;}
     .adress__plank {position: relative; width: 100%; bottom: 0; left: 0; border: none; box-sizing: border-box; border-radius: 0; height: auto; margin-top: -40px;}
     .high_block__title {font-size: 1.6em; margin-bottom: 30px; }
     .high_block .name {width: 300px; margin-left: 0; font-size: 0.8em;}
@@ -31,15 +32,15 @@
     }
 @media (min-width: 601px) and (max-width: 1024px) {
     body {font-size: 80%;}
-    .Equip__title {width: 50%;}
+    .Equip__title {width: 100%; position: relative; right: 0;}
     #main_button {width: 30%;}
-    .btn {width: 40%; }
+    .btn {width: 40%; margin: 0}
     .header__link {display: none;}
+    .adress__plank {width: 60%; box-sizing: border-box; border-radius: 0; height: auto; }
 }
 @media (max-width: 1025px) {
     body {font-size: 100%;}
-    .block-price__img {display: none;}
 }
-@media (min-width: 1025px) {
-
+@media (max-width: 760px) {
+    .block-price__img {display: none;}
 }
